@@ -7,5 +7,24 @@ def using_unshift(array, string)
 end
 
 def using_pop(array, string)
- array.unshift(string)
+ array.pop
+end
+
+def pop_with_args(array, num)
+  while(num > 0)
+    array.pop
+    num -= 1
+  end
+end
+
+def using_shift(array)
+ array.shift
+end
+
+
+def shift_with_args(array, num)
+  while(num > 0)
+    array.shift
+    num -= 1
+  end
 end
